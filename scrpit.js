@@ -10,10 +10,9 @@ stageImages.forEach(image => {
 });
 
 // Add event listener for the fullscreen button
-document.getElementById('fullscreen-btn').onclick = function() {
-    if (document.fullscreenElement) {
-        document.exitFullscreen();
-    } else {
-        document.documentElement.requestFullscreen();
+document.getElementById('fullscreen-btn').addEventListener('click', function() {
+    const docEl = document.documentElement;
+    if (!document.fullscreenElement && docEl.requestFullscreen) {
+        docEl.requestFullscreen();
     }
-};
+});
