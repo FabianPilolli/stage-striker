@@ -8,15 +8,3 @@ stageImages.forEach(image => {
         image.style.opacity = image.style.opacity === '0.5' ? 1 : 0.5;
     });
 });
-
-// Add event listener for the fullscreen button
-document.getElementById('fullscreen-btn').addEventListener('click', function () {
-    const elem = document.documentElement;
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { // Safari
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { // IE11
-        elem.msRequestFullscreen();
-    }
-});
