@@ -1,10 +1,18 @@
-// Select all elements with the "stage" class
-const stageImages = document.querySelectorAll(".stage");
+document.addEventListener('DOMContentLoaded', () => {
+    // Selecciona todas las imágenes con la clase 'stage'
+    const stageImages = document.querySelectorAll('.stage');
 
-// Loop through each image and attach the click event listener
-stageImages.forEach(image => {
-    image.addEventListener("click", () => {
-        // Toggle the opacity between 0.5 (darker) and 1 (original) on each click
-        image.style.opacity = image.style.opacity === '0.5' ? 0.5 : 0.5;
+    // Itera sobre cada imagen y añade un 'event listener' para el clic
+    stageImages.forEach(image => {
+        image.style.opacity = '1'; // Establece la opacidad inicial a 1
+
+        image.addEventListener('click', () => {
+            // Comprueba la opacidad actual y la cambia
+            if (image.style.opacity === '1') {
+                image.style.opacity = '0.5';
+            } else {
+                image.style.opacity = '1';
+            }
+        });
     });
 });
