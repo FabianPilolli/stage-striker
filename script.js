@@ -5,6 +5,6 @@ const stageImages = document.querySelectorAll(".stage");
 stageImages.forEach(image => {
     image.addEventListener("click", () => {
         // Toggle the opacity between 0.5 (darker) and 1 (original) on each click
-        image.style.opacity = image.style.opacity === '0.5' ? 1 : 0.5;
+        image.style.opacity = image.style.opacity === '0.5' ? 0.5 : 0.5;
     });
 });
