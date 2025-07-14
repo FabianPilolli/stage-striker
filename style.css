@@ -14,19 +14,16 @@ body {
     margin-bottom: 0.5em;
 }
 
-.stage {
-    position: relative;
-    width: 100%;
-    margin: 1%;
-    opacity: 1;
-    cursor: pointer;
-}
-
 .stage-container {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos pasen a otra línea */
-    width: 100%;
-    height: fit-content;
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 0;
+    margin-top: 1em;
+    width: 90%;
+    height: max-content;
     border: 1px solid #ccc;
     justify-content: center; /* Centra los stages en cada línea */
 }
@@ -36,17 +33,19 @@ body {
     flex: 0 0 auto;      /* No se estira ni se encoge */
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: calc(100px * 16 / 9); /* Mantiene el aspect ratio */
-    min-width: 0;
+    width: 25vw;
+    position: relative;
     aspect-ratio: 16 / 9;
     border: 1px solid #ccc;
+    background-color: #000;
     margin: 5px;
     cursor: pointer;
     box-sizing: border-box;
+    opacity: 1;
+    cursor: pointer;
 }
 
-#stage1 {
+/* #stage1 {
     background: url(https://ssb.wiki.gallery/images/thumb/7/7e/SSBU-Small-Battlefield.jpg/1200px-SSBU-Small-Battlefield.jpg) center center/cover no-repeat;
 }
 #stage2 {
@@ -70,4 +69,4 @@ body {
 }
 #stage8 {
     background: url(https://ssb.wiki.gallery/images/thumb/7/7e/SSBU-Hollow_Bastion.jpg/1200px-SSBU-Hollow_Bastion.jpg) center center/cover no-repeat;
-}
+} */
