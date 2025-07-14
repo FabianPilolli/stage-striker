@@ -45,7 +45,7 @@ body {
     cursor: pointer;
 }
 
-/* #stage1 {
+#stage1 {
     background: url(https://ssb.wiki.gallery/images/thumb/7/7e/SSBU-Small-Battlefield.jpg/1200px-SSBU-Small-Battlefield.jpg) center center/cover no-repeat;
 }
 #stage2 {
@@ -69,4 +69,4 @@ body {
 }
 #stage8 {
     background: url(https://ssb.wiki.gallery/images/thumb/7/7e/SSBU-Hollow_Bastion.jpg/1200px-SSBU-Hollow_Bastion.jpg) center center/cover no-repeat;
-} */
+}
